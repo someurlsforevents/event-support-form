@@ -232,11 +232,11 @@ function renderButtons() {
     btn.type = "button";
     btn.className = "actionBtn";
     btn.textContent = b.label;
+    if (b.color) btn.style.backgroundColor = b.color;
     btn.addEventListener("click", () => send(b));
     holder.appendChild(btn);
   });
 }
-
 async function send(b) {
   const form = document.getElementById("dynamicForm");
   if (b.validate && !form.reportValidity()) return;   // NEW
