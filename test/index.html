@@ -12,7 +12,19 @@
     .numberInput{ width:60px; padding:4px; }
     .optionLine{ display:block; margin-left:20px; margin-top:2px; }
     button{ margin-top:20px; margin-right:10px; padding:6px 14px; }
-    #status{ margin-top:16px; font-weight:bold; }
+    .actionBtn{
+      font-size: 18px;
+      font-weight: bold;
+      padding: 14px 28px;
+      margin: 20px 16px 0 0;
+      color: #ffffff;
+      background-color: #555;      /* fallback if no color is set in Config */
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .actionBtn:hover{ filter: brightness(0.9); }
+    .actionBtn:disabled{ opacity: 0.6; cursor: default; }    #status{ margin-top:16px; font-weight:bold; }
     .ok{ color:#1a7f37; } .err{ color:#b42318; }
     /* NEW */
     .intro{ white-space:pre-wrap; margin-bottom:12px; }
